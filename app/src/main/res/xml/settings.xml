@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/text_preference">
+
+        <!--key  id
+            title 文本内容
+            summary 下方介绍-->
+        <Preference
+            android:key="key_language"
+            android:title="@string/text_language"
+            android:summary="@string/text_language_summary"/>
+
+        <Preference
+            android:key="key_search"
+            android:title="@string/text_search"/>
+
+        <CheckBoxPreference
+            android:key="key_exit"
+            android:checked="true"
+            android:title="@string/text_exit"
+            android:summary="@string/text_exit_summary"/>
+
+        <CheckBoxPreference
+            android:key="key_night"
+            android:checked="false"
+            android:title="@string/text_night" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="网络">
+
+        <CheckBoxPreference
+            android:key="key_no_picture"
+            android:checked="false"
+            android:title="@string/text_no_picture"
+            android:summary="@string/text_no_picture_summary"/>
+
+        <CheckBoxPreference
+            android:key="key_refresh"
+            android:checked="true"
+            android:title="@string/text_refresh"
+            android:summary="@string/text_refresh_summary"/>
+
+        <Preference
+            android:key="key_cache"
+            android:title="@string/text_cache"/>
+
+        <Preference
+            android:key="key_update"
+            android:title="检查更新"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">包罗万象</string>
+
+    <!-- Navigation Items -->
+    <string name="item_home">主页</string>
+    <string name="item_group">关注的人</string>
+    <string name="item_tracker">我的钱包</string>
+    <string name="item_downloaded">离线缓存</string>
+    <string name="item_favourite">我的收藏</string>
+    <string name="item_history">历史记录</string>
+    <string name="item_settings">设置与帮助</string>
+    <string name="item_theme">主题选择</string>
+    <string name="item_app">应用推荐</string>
+    <string name="item_vip">我的大会员</string>
+
+
+    <!--settings-->
+    <string name="text_preference">偏好</string>
+    <string name="text_language">语言</string>
+    <string name="text_language_summary">简体中文</string>
+    <string name="text_search">搜索</string>
+    <string name="text_exit">退出确认</string>
+    <string name="text_exit_summary">按两次退出应用</string>
+    <string name="text_night">夜间模式</string>
+
+    <string name="text_no_picture">无图模式</string>
+    <string name="text_no_picture_summary">仅在WiFi下加载图片</string>
+    <string name="text_refresh">自动刷新</string>
+    <string name="text_refresh_summary">在WiFi下从网络上加载数据</string>
+    <string name="text_cache">清除缓存</string>
+
+    <string-array name="search">
+        <item>按关键字搜索</item>
+        <item>按其他搜索</item>
+    </string-array>
+</resources>
