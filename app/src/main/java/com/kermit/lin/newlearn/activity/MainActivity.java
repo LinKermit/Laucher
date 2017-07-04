@@ -125,6 +125,8 @@ public class MainActivity extends RxBaseActivity implements
                 startActivity(sIntent);
                 mDrawerLayout.closeDrawers();
                 break;
+            default:
+                break;
         }
         return true;
     }
