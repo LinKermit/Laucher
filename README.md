@@ -1,4 +1,4 @@
 # Launcher
 1.搭建RxJava框架
 2.设置界面的编写PreferenceFragment
-3.检查更新
+3.添加xml解析
