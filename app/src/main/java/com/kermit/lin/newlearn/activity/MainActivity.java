@@ -22,10 +22,10 @@ import android.widget.Toast;
 import com.kermit.lin.newlearn.R;
 import com.kermit.lin.newlearn.activity.settings.SettingActivity;
 import com.kermit.lin.newlearn.base.RxBaseActivity;
-import com.kermit.lin.newlearn.fragment.HomeFragment;
-import com.kermit.lin.newlearn.fragment.LearnFragment;
-import com.kermit.lin.newlearn.fragment.UserFragment;
-import com.kermit.lin.newlearn.fragment.VideoFragment;
+import com.kermit.lin.newlearn.module.fragment.HomeFragment;
+import com.kermit.lin.newlearn.module.fragment.LearnFragment;
+import com.kermit.lin.newlearn.module.fragment.UserFragment;
+import com.kermit.lin.newlearn.module.fragment.VideoFragment;
 import com.kermit.lin.newlearn.utils.Settings;
 
 import butterknife.BindView;
@@ -71,7 +71,7 @@ public class MainActivity extends RxBaseActivity implements
         initFragment();
         mViewPager.setOffscreenPageLimit(3);//决定缓存Fragment的状态个数，不设置，隔一个fragment跳转崩溃
         mViewPager.setAdapter(new MyHomeAdapter(getSupportFragmentManager(),fragments,fragmentNames));
-        mViewPager.setCurrentItem(1);
+        mViewPager.setCurrentItem(0);
         tabLayout.setupWithViewPager(mViewPager);
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -118,6 +118,7 @@ public class MainActivity extends RxBaseActivity implements
                 mDrawerLayout.closeDrawers();
                 break;
             case R.id.item_app:
+
                 mDrawerLayout.closeDrawers();
                 break;
             case R.id.item_settings:
@@ -184,7 +185,7 @@ public class MainActivity extends RxBaseActivity implements
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_top,menu);
-        MenuItem item = menu.findItem(R.id.main_top_search);
+//        MenuItem item = menu.findItem(R.id.main_top_search);
         return true;
     }
     @Override

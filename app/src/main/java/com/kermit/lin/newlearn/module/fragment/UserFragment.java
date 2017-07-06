@@ -1,4 +1,4 @@
-package com.kermit.lin.newlearn.fragment;
+package com.kermit.lin.newlearn.module.fragment;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -11,11 +11,11 @@ import com.kermit.lin.newlearn.base.RxLazyFragment;
  * 主界面分区界面
  */
 
-public class HomeFragment extends RxLazyFragment {
+public class UserFragment extends RxLazyFragment {
 
     private static final String TAG = "RegionFragment";
-    public static HomeFragment newInstance(){
-        return new HomeFragment();
+    public static UserFragment newInstance(){
+        return new UserFragment();
     }
 
     @Override

@@ -96,7 +96,6 @@ public abstract class RxLazyFragment extends RxFragment {
         binder.unbind();
     }
 
-    public void loadData(){
-    }
+    public void loadData(){}
     public void finishTask(){}
 }

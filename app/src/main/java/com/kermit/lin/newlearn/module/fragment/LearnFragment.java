@@ -1,4 +1,4 @@
-package com.kermit.lin.newlearn.fragment;
+package com.kermit.lin.newlearn.module.fragment;
 
 import android.os.Bundle;
 import android.util.Log;

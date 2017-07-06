@@ -102,6 +102,8 @@ public class XmlActivity extends AppCompatActivity {
                             Log.e("value",id+name+version);
                         }
                         break;
+                    default:
+                        break;
                 }
                 eventType = xmlPullParser.next();
             }
