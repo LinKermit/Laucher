@@ -1,6 +1,7 @@
 package com.kermit.lin.newlearn.activity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.os.Bundle;
@@ -19,13 +20,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.jaeger.library.StatusBarUtil;
 import com.kermit.lin.newlearn.R;
 import com.kermit.lin.newlearn.activity.settings.SettingActivity;
 import com.kermit.lin.newlearn.base.RxBaseActivity;
+import com.kermit.lin.newlearn.module.fragment.BangumiFragment;
 import com.kermit.lin.newlearn.module.fragment.HomeFragment;
 import com.kermit.lin.newlearn.module.fragment.LearnFragment;
 import com.kermit.lin.newlearn.module.fragment.UserFragment;
-import com.kermit.lin.newlearn.module.fragment.VideoFragment;
 import com.kermit.lin.newlearn.utils.Settings;
 
 import butterknife.BindView;
@@ -67,7 +69,7 @@ public class MainActivity extends RxBaseActivity implements
                 mDrawerLayout.openDrawer(GravityCompat.START);
             }
         });
-
+//        StatusBarUtil.setColorForDrawerLayout(this, mDrawerLayout, Color.argb(0,63,81,181));
         initFragment();
         mViewPager.setOffscreenPageLimit(3);//决定缓存Fragment的状态个数，不设置，隔一个fragment跳转崩溃
         mViewPager.setAdapter(new MyHomeAdapter(getSupportFragmentManager(),fragments,fragmentNames));
@@ -137,13 +139,13 @@ public class MainActivity extends RxBaseActivity implements
      */
     private void initFragment() {
         HomeFragment homeFragment = HomeFragment.newInstance();
-        VideoFragment videoFragment = VideoFragment.newInstance();
+        BangumiFragment bangumiFragment = BangumiFragment.newInstance();
         LearnFragment learnFragment = LearnFragment.newInstance();
         UserFragment userFragment = UserFragment.newInstance();
 
         fragments = new Fragment[] {
                 homeFragment,
-                videoFragment,
+                bangumiFragment,
                 learnFragment,
                 userFragment};
         fragmentNames = new String[]{"主页", "视频", "学习", "个人"};

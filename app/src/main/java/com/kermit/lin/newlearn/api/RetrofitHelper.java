@@ -18,6 +18,9 @@ public class RetrofitHelper {
         return createApi(GankApi.class, Constans.BASE_URL);
     }
 
+    public static GankApi getBangumiHomeApi() {
+        return createApi(GankApi.class, Constans.BILI_URL);
+    }
 
     private static OkHttpClient mOkHttpClient = new OkHttpClient();
     /**

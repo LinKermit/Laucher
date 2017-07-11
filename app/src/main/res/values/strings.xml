@@ -33,4 +33,8 @@
         <item>按关键字搜索</item>
         <item>按其他搜索</item>
     </string-array>
+
+    <string name="facebook_app_id">487692214752558</string>
+
+
 </resources>

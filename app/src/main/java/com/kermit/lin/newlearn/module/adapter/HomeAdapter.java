@@ -42,7 +42,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         if (holder instanceof ImageViewHolder){
             ImageInfo.ResultsBean resultData = resultsBeen.get(position);
-            ImageViewHolder holder1 = (ImageViewHolder) holder;
+            final ImageViewHolder holder1 = (ImageViewHolder) holder;
             Glide.with(mContext).load(resultData.getUrl()).into(holder1.mImage);
             holder1.mShowTime.setText(resultData.getDesc());
 
@@ -52,6 +52,13 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     if(onItemClickListener != null){
                         onItemClickListener.onItemClick(position);
                     }
+                }
+            });
+
+            holder1.mCollect.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
                 }
             });
         }

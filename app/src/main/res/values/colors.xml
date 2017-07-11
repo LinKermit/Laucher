@@ -4,8 +4,18 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="window_background">#eaeaea</color>
+
     <color name="white">#FFFFFF</color>
     <color name="white_trans">#99ffffff</color>
     <color name="black">#000000</color>
     <color name="lineColor">#cccccc</color>
+
+    <color name="yellow_30">#FEA501</color>
+    <color name="pink_30">#FD7071</color>
+    <color name="blue_30">#20C1FD</color>
+    <color name="black_40">#71000000</color>
+    <color name="font_normal">#555555</color>
+    <color name="black_light">#333333</color>
+    <color name="black_alpha_45">#71000000</color>
 </resources>

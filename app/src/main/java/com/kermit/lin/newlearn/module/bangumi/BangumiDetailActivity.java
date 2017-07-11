@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.jaeger.library.StatusBarUtil;
 import com.kermit.lin.newlearn.R;
 import com.kermit.lin.newlearn.api.RetrofitHelper;
 import com.kermit.lin.newlearn.base.RxBaseActivity;
@@ -132,7 +133,7 @@ public class BangumiDetailActivity extends RxBaseActivity {
     private boolean isFollowed = false;
 
     private void setToolBarTrans() {
-        toolbar.setBackgroundColor(Color.argb(0, 251, 114, 153));
+        toolbar.setBackgroundColor(Color.argb(0,63,81,181));
         final float imageHeight = getResources().getDimension(R.dimen.bangumi_details_top_layout_height);
         final float toolBarHeight = getResources().getDimension(R.dimen.action_bar_default_height);
         //为滑动设置监听
@@ -148,7 +149,7 @@ public class BangumiDetailActivity extends RxBaseActivity {
                 if (absOffset >= 1) {
                     absOffset = 1;
                 }
-                toolbar.setBackgroundColor(Color.argb((int) (absOffset * 255), 251, 114, 153));
+                toolbar.setBackgroundColor(Color.argb((int) (absOffset * 255),63,81,181));
             }
         });
     }
