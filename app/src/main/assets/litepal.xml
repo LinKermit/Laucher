@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="collection" />
+
+    <version value="1" />
+
+    <list>
+        <!--收藏首页图片数据库-->
+        <mapping class="com.kermit.lin.newlearn.db.ImageEntity" />
+
+    </list>
+    <!--<storage value="external" />-->
+</litepal>
