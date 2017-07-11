@@ -48,26 +48,13 @@ dependencies {
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
     /* 图片浏览器所需 */
     compile 'com.github.chrisbanes:PhotoView:2.0.0'
-    compile files('libs/libapshare.jar')
-    compile files('libs/libddshare.jar')
-    compile files('libs/open_sdk_r5781.jar')
-    compile files('libs/SocialSDK_alipay.jar')
-    compile files('libs/SocialSDK_Ding.jar')
-    compile files('libs/SocialSDK_douban.jar')
-    compile files('libs/SocialSDK_email.jar')
-    compile files('libs/SocialSDK_evernote.jar')
-    compile files('libs/SocialSDK_QQ_Full.jar')
-    compile files('libs/SocialSDK_renren.jar')
-    compile files('libs/SocialSDK_Sina_Full.jar')
-    compile files('libs/SocialSDK_sms.jar')
-    compile files('libs/SocialSDK_tencentWB.jar')
-    compile files('libs/SocialSDK_WeiXin_Full.jar')
-    compile files('libs/umeng_shareboard_widget.jar')
-    compile files('libs/umeng_social_api.jar')
-    compile files('libs/umeng_social_net.jar')
-    compile files('libs/umeng_social_shareboard.jar')
-    compile files('libs/umeng_social_shareview.jar')
-    compile files('libs/umeng_social_tool.jar')
-    compile files('libs/wechat-sdk-android-with-mta-1.1.6.jar')
-    compile files('libs/weiboSDKCore_3.1.4.jar')
+
+    //数据库
+    compile 'org.litepal.android:core:1.5.1'
+    compile 'com.youth.banner:banner:1.4.9'
+    //图片模糊
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    //标签
+    compile 'com.zhy:flowlayout-lib:1.0.1'
 }
+
